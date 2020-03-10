@@ -13,9 +13,15 @@ var (
 )
 
 func main() {
+	/*
+	If you want a sorted map, copy the keys (or values) to a slice, 
+	sort the slice (using the sort package, see § 7.6.6), 
+	and then print out the keys and/or values using a for-range on the slice.
+	*/
 	fmt.Println("unsorted:")
 	for k, v := range barVal {
-		fmt.Printf("Key: %v, Value: %v / ", k, v)
+		// fmt.Printf("Key: %v, Value: %v / ", k, v)
+		fmt.Printf("%v:%v / ", k, v)
 	}
 	keys := make([]string, len(barVal))
 	i := 0
@@ -27,7 +33,8 @@ func main() {
 	fmt.Println()
 	fmt.Println("sorted:")
 	for _, k := range keys {
-		fmt.Printf("Key: %v, Value: %v / ", k, barVal[k])
+		// fmt.Printf("Key: %v, Value: %v / ", k, barVal[k])
+		fmt.Printf("%v:%v / ", k,  barVal[k])
 	}
 }
 /* Output:

@@ -15,9 +15,11 @@ func main() {
 	for k, v := range barVal {
 		invMap[v] = k
 	}
+
 	fmt.Println("inverted:")
 	for k, v := range invMap {
-		fmt.Printf("Key: %v, Value: %v / ", k, v)
+		// fmt.Printf("Key: %v, Value: %v / ", k, v)
+		fmt.Printf("%v:%v / ", k, v)
 	}
 }
 /* Output:
