@@ -13,7 +13,7 @@ func main() {
 		fmt.Printf("fibonacci(%d) is: %d\n", i, result)
 	}
 	end := time.Now()
-	delta := end.Sub(start)
+	delta := end.Sub(start)  // 结束时间减去开始时间
 	fmt.Printf("longCalculation took this amount of time: %s\n", delta) 
 }
 

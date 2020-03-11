@@ -10,6 +10,7 @@ func main() {
 }
 
 func Adder() func(int) int {
+	// return type func(int) int
 	var x int
 	return func(delta int) int {
 		x += delta

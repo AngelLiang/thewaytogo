@@ -11,12 +11,14 @@ func main() {
 }
 
 func Add2() (func(b int) int) {
+	// return lambda function
 	return func(b int) int {
 		return b + 2
 	}
 }
 
 func Adder(a int) (func(b int) int) {
+	// return lambda function
 	return func(b int) int {
 		return a + b
 	}

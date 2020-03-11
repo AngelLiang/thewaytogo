@@ -1,3 +1,6 @@
+/*
+lambda functions can be assigned to variables and treated as values.
+*/
 package main
 import "fmt"
 
@@ -11,5 +14,4 @@ func f() {
 		g(i)
 		fmt.Printf(" - g is of type %T and has value %v\n", g, g)
 	}
-	
 }

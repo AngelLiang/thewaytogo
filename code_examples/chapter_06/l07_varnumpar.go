@@ -1,3 +1,4 @@
+// 可变参数函数
 package main
 
 import "fmt"
@@ -10,7 +11,11 @@ func main() {
 	fmt.Printf("The minimum in the array arr is: %d", x)
 }
 
+/*
+ * variadic function
+ */
 func Min(a ...int) int {
+  
   if len(a)==0 {
     return 0
   }

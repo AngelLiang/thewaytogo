@@ -1,4 +1,9 @@
 // function_parameter.go
+/*
+Functions can be used as parameters in another function, the passed
+function can then be called within the body of that function,
+that is why it is commonly called a callback.
+*/
 package main
 
 import (
