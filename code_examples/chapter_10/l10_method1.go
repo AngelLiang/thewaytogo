@@ -1,3 +1,14 @@
+/*
+
+a Go method is a function that acts on variable of a certain type,
+called the *receiver*. So a method is a special kind of function.
+
+
+	func (recv receiver_type) methodName(parameter_list) (return_value_list) { ... }
+
+The receiver is specified in ( ) before the method name after the func keyword.
+*/
+
 package main
 
 import "fmt"
