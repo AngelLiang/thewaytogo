@@ -1,4 +1,9 @@
 // mult_inheritance.go
+/*
+you want to have a type CameraPhone, with which you can Call() and
+with which you can TakeAPicture(), but the first method belongs to
+type Phone, and the second to type Camera.
+*/
 package main
 
 import "fmt"

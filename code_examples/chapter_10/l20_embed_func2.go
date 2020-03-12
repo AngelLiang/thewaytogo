@@ -1,3 +1,9 @@
+/*
+The embedded type does not need to a pointer, Customer
+does not need an Add method anymore because it uses
+the method from Log, Customer can have its own String-method
+and using in it the log String() method.
+*/
 package main
 
 import (
@@ -9,7 +15,7 @@ type Log struct {
 }
 
 type Customer struct {
-    Name	string
+	Name	string
     Log
 }
 

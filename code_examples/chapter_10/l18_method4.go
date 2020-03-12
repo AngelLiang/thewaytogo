@@ -18,8 +18,11 @@ type NamedPoint struct {
 	name string
 }
 
+/*
+ * overriding
+ */
 func (n *NamedPoint) Abs() float64 {
-	// overriding
+	
 	return n.Point.Abs() * 100.
 }
 

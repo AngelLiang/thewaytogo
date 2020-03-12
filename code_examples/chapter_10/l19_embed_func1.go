@@ -10,7 +10,7 @@ type Log struct {
 
 type Customer struct {
     Name	string
-    log 	*Log
+    log 	*Log  // log 是一个指针
 }
 
 func main() {
@@ -18,9 +18,11 @@ func main() {
 	// c.Name = "Barak Obama"
 	// c.log = new(Log)
 	// c.log.msg = "1 - Yes we can!"
+
 	// shorter:
 	c := &Customer{"Barak Obama", &Log{"1 - Yes we can!"}}
 	// fmt.Println(c)   // &{Barak Obama 1 - Yes we can!}
+
 	c.Log().Add("2 - After me the world will be a better place!")
 	//fmt.Println(c.log)
 	fmt.Println(c.Log())
