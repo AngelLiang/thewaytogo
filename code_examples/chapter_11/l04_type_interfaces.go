@@ -28,15 +28,17 @@ func main() {
 		// If this conversion is valid, t will contain the value of varI converted to type T and ok will be true, otherwise t is the zero value for T and ok is false
 		fmt.Printf("The type of areaIntf is: %T\n", t)
 	}
+
 	if u, ok := areaIntf.(*Circle); ok {
 		fmt.Printf("The type of areaIntf is: %T\n", u)
 	} else {
-		fmt.Println("areaIntf does not contain a variable of type Circle")
+		fmt.Println("areaIntf does not contain a variable of type Circle")  // print
 	}
+
 	// testing with switch:
 	switch t := areaIntf.(type) {
 		case *Square:
-			fmt.Printf("Type Square %T with value %v\n", t, t)
+			fmt.Printf("Type Square %T with value %v\n", t, t)  // print
 		case *Circle:
 			fmt.Printf("Type Circle %T with value %v\n", t, t)
 		/* 

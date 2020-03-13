@@ -1,3 +1,6 @@
+/*
+Title: Empty Interface
+*/
 package main
 
 import "fmt"
@@ -10,6 +13,10 @@ type Person struct {
 	age	int
 }
 
+/*
+A variable of that interface type var val  interface{} can through 
+assignment receive a variable of any type.
+*/
 type Any interface{}
 
 func main() {

@@ -1,4 +1,10 @@
 // dial.go.go
+/*
+The net.Dial function is one of the most important functions in networking.
+When you Dial into a remote system the function returns a Conn interface type,
+which can be used to send and receive information. The function Dial neatly abstracts 
+away the network family and transport. So IPv4 or IPv6, TCP or UDP can all share a common interface.
+*/
 package main
 
 import (
