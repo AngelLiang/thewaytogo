@@ -1,3 +1,7 @@
+/*
+the goroutine pump sends integers in an infinite loop on the channel. 
+But because there is no receiver, the only output is the number 0
+*/
 package main
 
 import "fmt"
