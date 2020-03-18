@@ -32,6 +32,10 @@ func pump2(ch chan int) {
 	}
 }
 
+/*
+suck() polls for input also in a non ending loop,
+takes the integers in from ch1 and ch2 in the select clause, and outputs them. 
+*/
 func suck(ch1, ch2 chan int) {
 	for {
 		select {
